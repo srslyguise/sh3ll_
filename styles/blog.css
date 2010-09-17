@@ -1,0 +1,28 @@
+/*
+ * This is the blog style CSS
+*/
+
+.blog_div {
+	border:		1px solid #222222;
+	width:		400px;
+	margin-left:	auto;
+	margin-right:	auto;
+	word-wrap:	break-word;
+}
+.blog_title {
+	border-bottom:	1px solid #222222;
+	text-align:	center;
+}
+.blog_content {
+	border-bottom:	1px solid #222222;
+	text-align:	left;
+	white-space:	pre-line;
+}
+.blog_info {
+	text-align:	right;
+}
+.blog_table {
+	border:		1px solid #222222;
+	margin-left:	auto;
+	margin-right:	auto;
+}

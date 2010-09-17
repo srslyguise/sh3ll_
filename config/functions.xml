@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Root[
+
+<!ELEMENT Root (Function+)>
+<!ELEMENT Function (Src, Params, Description)>
+<!ELEMENT Src (#PCDATA)>
+<!ELEMENT Params (#PCDATA)>
+<!ELEMENT Description (#PCDATA)>
+<!ATTLIST Function
+	name CDATA #REQUIRED
+>
+]>
+
+<!--
+
+This file contains the functions that you want to load.
+
+There are some default functions like cat, ls, cd, blog, cowsay and help that maybe you want to have in your site, but if you want, you can remove them.
+
+The syntax is very simple, to add a function you have to add a <Function></Function> tag, that must contain the tags Src, the js source of your function, Params, the parameters of your function, and Description, the description of your function. All of these tags are required, Params can be left void, like in help function.
+
+-->
+
+
+<Root>
+	<Function name="cat">
+		<Src>functions/cat.js</Src>
+		<Params><![CDATA[&lt;filename&gt;]]></Params>
+		<Description><![CDATA[Show the content of 'filename']]></Description>
+	</Function>
+
+	<Function name="ls">
+		<Src>functions/ls.js</Src>
+		<Params><![CDATA[[directory]]]></Params>
+		<Description><![CDATA[Show the content of 'directory' or content of current directory]]></Description>
+	</Function>
+
+	<Function name="cd">
+		<Src>functions/cd.js</Src>
+		<Params><![CDATA[&lt;directory|link&gt;]]></Params>
+		<Description><![CDATA[Change working directory or go to link]]></Description>
+	</Function>
+
+	<Function name="example">
+		<Src>functions/example.js</Src>
+		<Params><![CDATA[&lt;parameter1&gt; &lt;parameter2&gt;]]></Params>
+		<Description><![CDATA[Function example]]></Description>
+	</Function>
+
+	<Function name="blog">
+		<Src>functions/blog.js</Src>
+		<Params>[post]</Params>
+		<Description>The Blog</Description>
+	</Function>
+
+	<Function name="cowsay">
+		<Src>functions/cowsay.js</Src>
+		<Params><![CDATA[[-f cowfile] &lt;message&gt;]]></Params>
+		<Description><![CDATA[configurable speaking/thinking cow (and a bit more)]]></Description>
+	</Function>
+
+	<Function name="help">
+		<Src>functions/help.js</Src>
+		<Params></Params>
+		<Description><![CDATA[Print this usage]]></Description>
+	</Function>
+</Root>

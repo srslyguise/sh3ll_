@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Root[
+
+<!ELEMENT Root (Style+)>
+<!ELEMENT Style (Src)>
+<!ELEMENT Src (#PCDATA)>
+]>
+
+<!--
+This file contains the style files to be loaded at startup.
+Everything is self-explainatory
+-->
+
+<Root>
+	<Style>
+		<Src>styles/main.css</Src>
+	</Style>
+	<Style>
+		<Src>styles/blog.css</Src>
+	</Style>
+</Root>

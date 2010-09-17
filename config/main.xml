@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Root[
+
+<!ELEMENT Root (Directory+, Title, Usr)>
+<!ELEMENT Title (#PCDATA)>
+<!ELEMENT Usr (#PCDATA)>
+<!ELEMENT Directory (File*, SubDirectory*, Link*)>
+<!ELEMENT File (Name, Src, Description*)>
+<!ELEMENT SubDirectory (Name)>
+<!ELEMENT Link (Name, Description*, Url)>
+<!ELEMENT Name (#PCDATA)>
+<!ELEMENT Src (#PCDATA)>
+<!ELEMENT Description (#PCDATA)>
+<!ELEMENT Url (#PCDATA)>
+<!ATTLIST Root
+	title CDATA #REQUIRED
+>
+<!ATTLIST Directory
+	name CDATA #REQUIRED
+>
+<!ATTLIST Usr
+	root CDATA #REQUIRED
+>
+]>
+
+<!--
+
+This file contains informations about the site and the virtual "tree" of directories, files and links in the site.
+
+All should be self-explanatory, but I must ascertain some things.
+
+The Directory tag represent a directory, in which you can add other directories, with the SubDirectory tag, files and links.
+
+The Directory "/" MUST always be here, if not the site will die.
+
+The Title tag contains the title of the site, the tag Usr contains the name of the user which will be printed in the prompt.
+
+The attribute "title" of Root, specifies if the title have to be printed.
+The attribute "root" of Usr, specifies if the user is root.
+
+-->
+
+<Root title="false">
+	<Title>Your title goes here</Title>
+	<Usr root="false">lolusr</Usr>
+	<Directory name="/">
+		<SubDirectory>
+			<Name>example_dir</Name>
+		</SubDirectory>
+	</Directory>
+
+	<Directory name="example_dir">
+		<File>
+			<Name>example_file</Name>
+			<Src>res/example_file</Src>
+			<Description><![CDATA[File example]]></Description>
+		</File>
+
+		<Link>
+			<Name>example_link</Name>
+			<Url>http://www.example_link.com</Url>
+			<Description><![CDATA[Link Example]]></Description>
+		</Link>
+	</Directory>
+</Root>

@@ -1,0 +1,67 @@
+/*
+ * This file contain the style of the site.
+ *
+ * .body is self-explanatory
+ * .text represents the text output of functions
+ * .prompt represents the prompt of the "terminal"
+ * .title is self-explanatory
+ * .shell represents the text-box in which you write commands
+ * .subdirs represents the style of the sub-directories printed by the ls function
+ * .files is the same of .subdirs for files
+ * .links same of above
+ *
+*/
+
+
+.body{
+	background-color: #000000;
+	background-attachment: fixed;
+}
+
+.text{
+	color: white;
+	font-family: Times New Roman;
+	font-size: 10pt;
+	font-weight: normal;
+	word-wrap: break-word;
+	white-space: pre-line;
+}
+
+.prompt{
+	color: white;
+	font-family: Times New Roman;
+	font-size: 10pt;
+	font-weight: normal;
+}
+
+.title {
+	color: white;
+	font-family: Times New Roman;
+	font-size: 10pt;
+	font-weight: normal;
+	text-align: center;
+}
+
+.shell{
+	border: 0px;
+	color: white;
+	background-color: transparent;
+	font-family: Times New Roman;
+	font-weight: normal;
+	height: 10pt;
+}
+
+.subdirs {
+	color: #0000FF;
+}
+
+.files {
+	color: #00FF00;
+}
+
+.links {
+	color: #00FFFF;
+}
+
+.cowsay {
+}

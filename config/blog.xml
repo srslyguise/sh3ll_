@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Root[
+
+<!ELEMENT Root (Post*)>
+<!ELEMENT Post (Title, Author, Date, Content)>
+<!ELEMENT Title (#PCDATA)>
+<!ELEMENT Author (#PCDATA)>
+<!ELEMENT Date (#PCDATA)>
+<!ELEMENT Content (#PCDATA)>
+]>
+
+<!--
+This is the main configuration file of the function blog.
+Everything should be self-explainatory.
+-->
+
+<Root>
+	<Post>
+		<Title>First Post</Title>
+		<Author>You</Author>
+		<Date>Date goes here</Date>
+		<Content>Content of post</Content>
+	</Post>
+
+</Root>
