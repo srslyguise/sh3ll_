@@ -1,0 +1,24 @@
+sh3ll_ is a command line CMS written in Javascript and PHP.
+
+It uses XML for configuration.
+
+Require PHP5 to work.
+
+Supported Browsers(Tested Browsers)
+Firefox		-> 3.6.3
+Opera		-> 10.60
+Safari		-> 4.0.2
+Chrome		-> 5.0.375
+Seamonkey	-> 2.0.2
+Konqueror	-> 4.2.4 (You may have a lot of problems, you know, the respect of standards today isn't cool)
+IE		-> 8 (Same of Konqueror)
+
+If you test this CMS on other browsers, or on different browsers versions, please contact me.
+
+One important thing is that if you want to put this CMS in another directory on the
+site and not in the base directory, you MUST edit the scripts/shell.js file and
+modify the vars MAINXML and FUNCTIONSXML to the path on the server in which the two
+xmls are located. For example, on Altervista, to use PHP5, you have to put your
+site into a directory called php5, so, if you want to use this site, you must edit
+scripts/shell.js and change the two vars from "config/main.xml" and
+"config/functions.xml" to "php5/config/main.xml" and "php5/config/functions.xml".
