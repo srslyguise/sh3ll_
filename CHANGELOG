@@ -1,0 +1,15 @@
+1.0
+	= First Release
+1.1
+	+ Added support for multiple styles
+	+ Added default function "blog"
+	+ Fixed Minor Bugs
+1.1.1
+	+ Fixed blog default css
+	+ Fixed browser caching problem
+1.2
+	+ Changed the style of function help
+	+ Modified function clear
+	+ Sh3ll_ can be loaded inside another element
+	+ Title can be added or removed
+	+ Added cowsay function...moo
