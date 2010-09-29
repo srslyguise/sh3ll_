@@ -196,7 +196,7 @@ parse: function(text)
 {
 	if(text.match(/^[\w\.\u00A1-\uFFFF]+[\t]*/))
 	{
-		var str = text.match(/^[\w\u00A1-\uFFFF]+/);
+		var str = text.match(/[(\x00-\x19)(\x21-\xFF)]+/);
 		var argv = text.split(" ");
 
 		if(sh3ll_.check_function(str))
