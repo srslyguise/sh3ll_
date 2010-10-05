@@ -46,11 +46,11 @@ init: function()
 	document.getElementById('shell').focus();
 	document.getElementById('shell').select();
 
-	if(navigator.appName == "Microsoft Internet Explorer")
-		alert("You may have some problems with IE");
+	//if(navigator.appName == "Microsoft Internet Explorer")
+		//alert("You may have some problems with IE");
 
-	if(navigator.userAgent.match(/Konqueror/))
-		alert("You may have some problems with Konqueror");
+	//if(navigator.userAgent.match(/Konqueror/))
+		//alert("You may have some problems with Konqueror");
 },
 
 getTitle: function()
